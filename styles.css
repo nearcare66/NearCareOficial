@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fondo */
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        180deg,
+        #bfe3e8 0%,
+        #cfeee3 50%,
+        #e6f6f2 100%
+    );
+
+    overflow: hidden;
+    position: relative;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 10px;
+
+    background: linear-gradient(
+        180deg,
+        #7fc6de,
+        #6bb6d6
+    );
+}
+
+.back-btn {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    border: 2px solid #000;
+
+    background: transparent;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-text {
+    flex: 1;
+    height: 40px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* Cuadro azul */
+.container::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 520px;
+
+    background: linear-gradient(
+        180deg,
+        #bfe3e8 0%,
+        #cfeee3 50%,
+        #e6f6f2 100%
+    );
+
+    border-radius: 35px;
+
+    z-index: -1;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.20);
+}
+
+/* Título */
+.container h2 {
+    color: white;
+
+    font-size: 42px;
+    font-weight: bold;
+
+    margin-bottom: 40px;
+}
+
+/* Formulario */
+form {
+    width: 320px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Inputs */
+.input-field {
+    width: 100%;
+    height: 45px;
+
+    border: none;
+    border-radius: 25px;
+
+    margin-bottom: 18px;
+
+    padding: 0 20px;
+
+    outline: none;
+
+    text-align: center;
+    font-size: 15px;
+
+    background: #dfe5f2;
+}
+
+/* Placeholder */
+.input-field::placeholder {
+    color: #777;
+}
+
+/* Botón */
+.submit-btn {
+    width: 100%;
+    height: 45px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #3cb878;
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    transform: scale(1.03);
+}
+
+/* Logo */
+.logo {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+/* Círculos decorativos */
+.circle {
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        #3b5ba9,
+        #1c2c5b
+    );
+}
+
+.circle-left {
+    width: 120px;
+    height: 120px;
+
+    bottom: 80px;
+    left: -40px;
+}
+
+.circle-right {
+    width: 160px;
+    height: 160px;
+
+    top: 200px;
+    right: -60px;
+}
+/* Título */
+.container h2 {
+    color: #2c6fb0; /* azul */
+
+    font-size: 42px;
+    font-weight: bold;
+
+    margin-bottom: 40px;
+}
+
+/* Inputs */
+.input-field {
+    width: 100%;
+    height: 45px;
+
+    border: none;
+    border-radius: 25px;
+
+    margin-bottom: 18px;
+
+    padding: 0 20px;
+
+    outline: none;
+
+    text-align: center;
+    font-size: 15px;
+
+    background: #ffffff; /* blanco */
+
+    color: #000;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Placeholder */
+.input-field::placeholder {
+    color: #777;
+}
+/* Círculos */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        #3b5ba9,
+        #1c2c5b
+    );
+
+    z-index: 1;
+}
+
+/* Izquierda */
+.circle-left {
+    width: 120px;
+    height: 120px;
+
+    bottom: 80px;
+    left: -40px;
+}
+
+/* Derecha */
+.circle-right {
+    width: 160px;
+    height: 160px;
+
+    top: 200px;
+    right: -60px;
+}
+
+/* Arriba */
+.circle-top {
+    width: 90px;
+    height: 90px;
+
+    top: 60px;
+    left: 200px;
+}
+
+/* Abajo */
+.circle-bottom {
+    width: 140px;
+    height: 140px;
+
+    bottom: -50px;
+    right: 250px;
+}
+
+/* Centro */
+.circle-center {
+    width: 70px;
+    height: 70px;
+
+    top: 350px;
+    left: 120px;
+}
+
+/* Pequeño */
+.circle-small {
+    width: 50px;
+    height: 50px;
+
+    top: 120px;
+    right: 300px;
+}
