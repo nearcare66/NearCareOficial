@@ -19,7 +19,7 @@ session_start();
 
   <header class="navbar">
 
-    <a href="index.php"class="back-arrow">←</a>s
+    <a href="index.php"class="back-arrow">←</a>
 
     <div class="logo">
       <img src="img/Designer (16).png" alt="logo">
